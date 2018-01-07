@@ -1,0 +1,19 @@
+{
+  "name": "nodetsproject",
+  "version": "1.0.0",
+  "description": "A starter project that lets you write nodejs code in typescript. Debugging in VSCode works too",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "8.5.7",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.6.2",
+    "tslint": "^5.8.0"
+  },
+  "keywords": [],
+  "author": "sahilmalik@winsmarts.com",
+  "license": "ISC"
+}
