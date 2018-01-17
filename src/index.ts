@@ -1,12 +1,21 @@
 class SomeClass {
-    constructor(public someValue: string) {
+    constructor(public someObject: object) {
 
     }
 
     writeTheValue() {
-        console.log(this.someValue)
+        console.dir(this.someObject, { depth: null, colors: true })
     }
 }
 
-const someObject: SomeClass = new SomeClass('someValue');
-console.log(someObject.writeTheValue());
+const someObject: SomeClass = new SomeClass({
+    "exampleObject": {
+        "title": "example title",
+        "exampleComplexChild": {
+            "title": "S",
+            "number": 12
+        }
+    }
+});
+
+someObject.writeTheValue();
